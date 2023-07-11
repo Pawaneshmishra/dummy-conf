@@ -771,9 +771,16 @@ ul li {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.logo, a:hover {
+  background-color: transparent;
+}
 
 a:hover {
-  background-color: #0c2e547f;
+  background-color: #0A2647;
   border-radius: 5px;
   color: rgb(255, 255, 255);
+}
+
+option{
+  text-transform: capitalize;
 }
