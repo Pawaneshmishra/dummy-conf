@@ -607,3 +607,27 @@ ul li {
 .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
   opacity: 0.8;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 15px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
