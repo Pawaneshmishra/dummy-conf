@@ -155,12 +155,17 @@ ul li {
 
 .section-title {
   color: #313131;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   margin: 0 0 20px;
   text-transform: uppercase;
   text-align: center;
+  text-shadow: #000000;
 }
-
+.about-text{
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
 /* 
  * 3.0 Helper Class
  */
@@ -750,6 +755,12 @@ ul li {
   bottom: 0px;
 }
 
+.card-details a:hover {
+  background-color: #0A2647;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
 @media (max-width: 720px) {
   .card {
     margin-bottom: 20px;
@@ -775,11 +786,6 @@ ul li {
   background-color: transparent;
 }
 
-a:hover {
-  background-color: #0A2647;
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-}
 
 option{
   text-transform: capitalize;
@@ -803,3 +809,52 @@ option{
 #myBtn:hover {
   background-color: #000000;
 }
+
+.patrons-Image{
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.img-patrons{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.img-patrons:hover{
+ opacity: 0.7;
+}
+
+.patrons-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.patrons-social a{
+  padding: 5px;
+  margin: 0px;
+}
+
+.patrons-social a:hover{
+  background-color: #e1efff;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 720px) {
+  .patrons-Image{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+
