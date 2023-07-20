@@ -27,7 +27,7 @@ function handleTopNavAnimation() {
 var countDownDate = new Date("Dec 28, 2023 00:00:00").getTime();
 
 // Update the countdown every 1 second
-var countdownFunction = setInterval(function() {
+var countdownFunction =  asetInterval(function() {
 
     // Get the current date and time
     var now = new Date().getTime();

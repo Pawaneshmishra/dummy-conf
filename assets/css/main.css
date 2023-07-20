@@ -599,7 +599,7 @@ ul li {
 /* 
  * 6.2 Section: Facts
  */
-.facts i {
+/* .facts i {
   color: #fff;
   font-size: 3em;
 }
@@ -608,7 +608,7 @@ ul li {
   color: #fff;
   text-align: center;
   font-weight: 400;
-}
+} */
 
 /* 
  * 6.3 Section: Speaker
@@ -857,10 +857,26 @@ ul li {
   margin-bottom: 40px;
 }
 
+.cardPatron {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.cardPatron:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  transition: 0.5s;
+  border-width: 0px;
+}
+
 .card-image {
   width: 100%;
   height: 300px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .card-image img {
@@ -900,6 +916,11 @@ ul li {
 
 @media (max-width: 720px) {
   .card {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .cardPatron{
     margin-bottom: 20px;
     width: 90%;
   }
@@ -955,16 +976,18 @@ option {
   display: flex;
   justify-content: space-around;
   border-radius: 5px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 5px;
   object-fit: cover;
+  /* border-radius: 50%; */
 }
 
 .img-patrons {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  border-radius: 50%;
 }
 
 .img-patrons:hover {
@@ -990,9 +1013,68 @@ option {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px)  {
   .patrons-Image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
+  .factsContainer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
+  .factsCard{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexAd{
+    flex-wrap: wrap;
+  }
+}
+
+
+.factsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.factsCard{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.facts i {
+  color: #fff;
+  font-size: 3em;
+}
+
+.facts h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.flexLeft{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexAd{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
