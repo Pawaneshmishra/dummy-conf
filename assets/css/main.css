@@ -498,7 +498,7 @@ ul li {
   flex-wrap: wrap;
   padding: 5px;
   background-color: #0a26478c;
-  border-bottom: 1px solid #ffffff;
+  /* border-bottom: 1px solid #ffffff; */
 }
 .footer-text{
   font-size: 1rem;
