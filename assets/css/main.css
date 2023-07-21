@@ -384,7 +384,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/conf-hall.jpg) no-repeat center center/cover;
+  background: url(../images/backgrounds/nationalinstituteoftechnologykurukshetra.jpeg) no-repeat center center/cover;
   /* background: url('https://images.bhaskarassets.com/thumb/1200x900/web2images/521/2022/11/07/orig_41_1667770431.jpg') no-repeat center center/cover; */
   display: table;
 }
@@ -487,18 +487,51 @@ ul li {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5px;
+}
+
+.footer-collage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: #0a26478c;
+  border-bottom: 1px solid #ffffff;
+}
+.footer-text{
+  font-size: 1rem;
+}
+
+.borderFoot{
+  border-right: 1px solid #ffffff;
+  align-self: center;
+}
+
+.developer-card{
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer-card:hover{
+  box-shadow: 0 0 11px rgba(83, 103, 126, 0.575); 
+  transition: 0.8s;
+}
+
+.developerName{
+  font-size: 8px;
+  color: black;
 }
 
 .developer {
-  flex: 0 0 calc(33.33% - 2rem);
-  max-width: 300px;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 80px;
+  width: 30%;
+  margin: 5px;
+  padding: 5px;
+  /* background-color: #fff; */
 }
 
 .developer img {
@@ -507,21 +540,23 @@ ul li {
   margin-bottom: 1rem;
 }
 
-.developer h4 {
+.developer h4, h5, a, p {
   margin: 0;
   font-size: 1.2rem;
-  color: #000000;
 }
 
 .social-links {
+  width: 90%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .social-icon {
   display: inline-block;
   width: 30px;
   margin: 0 0.5rem;
+  color: #000;
 }
 
 .social-icon img {
@@ -533,7 +568,7 @@ ul li {
   position: relative;
   text-align: center;
   /* padding: 1rem 0; */
-  /* background-color: white; */
+  background-color: #0a26478c;
 }
 
 .footer-waves-content {
@@ -577,10 +612,27 @@ ul li {
 /* Responsive changes */
 @media (max-width: 768px) {
   .footer-developers {
-    flex-direction: column;
+    flex-direction: row;
   }
   .developer {
-    flex: 0 0 100%;
+    width: 95%;
+  }
+
+  .footer-collage{
+    flex-direction: column;
+    align-items: center;
+  }
+  .borderFoot{
+    border-right: 0px;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .developer h4, h5, a, p{
+    font-size: 0.85rem;
+  }
+
+  .footer-text{
+    font-size: 0.8rem;
   }
 }
 
@@ -1033,7 +1085,6 @@ option {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid red;
   }
   .factsCard{
     width: 90%;
