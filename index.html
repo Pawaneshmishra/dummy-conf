@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" href="assets/images/logoforppt.png" type="image/x-icon">
+    <!--clock things-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!--clock things-->
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -24,24 +30,6 @@
                     class="glyphicon glyphicon-chevron-up"></span></button>
 
             <div class="navbar-header">
-
-                <!-- logo -->
-                <div class="site-branding">
-                    <a class="logo" href="index.html" style="display: flex; flex-direction: column;">
-
-                        <!--just write NIT KURUKSHETRA.-->
-
-                        <!-- <h3>FPNSES-2023</h3> -->
-
-                        <!-- logo image  -->
-                        <!-- <img src="assets/images/logoforppt-removebg-preview.png" alt="Logo" style="width:50%;"> -->
-                        <!-- <img src="assets/images/logoforppt.png" alt="Logo" style="width:10%;"> -->
-
-                        <!-- <p class="logoText">International Conference on Future Power Network and Smart Energy Systems:
-                            Issues and Challenges (Int. Conf. FPNSES-2023) (HYBRID MODE)</p> -->
-                    </a>
-                </div>
-
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
                     aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -50,7 +38,9 @@
                     <span class="icon-bar"></span>
                 </button>
 
-            </div><!-- /.navbar-header -->
+            </div>
+            
+            <!-- /.navbar-header -->
 
             <div class="collapse navbar-collapse" id="navbar-items">
                 <ul class="nav navbar-nav">
@@ -71,7 +61,7 @@
 
                 </ul>
             </div>
-        </div><!-- /.container -->
+        </div>
     </nav>
 
     <header id="site-header" class="site-header valign-center">
@@ -88,71 +78,65 @@
 
 
             <p>Organised by Dept. of Electrical Engineering, NIT Kurukshetra</p>
-            <!-- <h2 style="color: rgb(238, 165, 165);">Conference Id : 212212</h2> -->
+            <!-- <h2 style="color: rgb(238, 165, 165);">Conference Id : </h2> -->
 
-            <!-- <a class="btn btn-white" data-scroll href="#registration">Contact Us</a> -->
-
+            <!--countdown code-->
+            <!-- Countdown Timer -->
+            <br>
+            <div id="countdown"></div>
+            <br>
+            <br>
+            <div class="glassmorphism-card">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                  <span style="color: rgb(48, 250, 44)" class="deadline">Paper Submission Deadline: 18th August, 2023</span>
+                  <span class="gap"></span> <!-- This empty span adds the gap -->
+                  <span class="description">All the accepted papers and presented papers will be submitted to the IEEE Xplore Digital Library</span>
+                </marquee>
+            </div>
+              
         </div>
     </header>
 
     <section id="about" class="section about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-
+                <div class="col-sm-12">
                     <h3 class="section-title">About International Conference FPNSES-2023</h3>
-
+    
                     <p class="about-text" style="text-align: justify;">An International Conference on Future Power
-                        Network and Smart Energy
-                        Systems: Issues and Challenges is being organised by Department of Electrical Engineering,
-                        National Institute of Technology, Kurukshetra. This conference shall provide a useful forum to
-                        the Academicians, Technologist, Entrepreneurs and Research scholars in the respective domain for
-                        further benefit of the mankind at large. Today, the power network is very vast, complex, and
-                        evolving with increasing penetration of renewable energy sources (RES), energy storage devices,
-                        electric vehicles, and smart technologies. This brings in associated challenges. The operation
-                        of the power system should be secure, interoperable, and cost-effective while the technology and
-                        innovation continue to modernize electric power system with the integration of RES, smart
-                        devices, communication for perfect coordination among devices and integration of hardware and
-                        software to take decisions like human making the electric infrastructure called a “smart grid”.
-                        With advanced sensing technologies and control techniques, it can capture and analyse data
-                        regarding power usage, delivery, and generation in near real-time. The information technologies
-                        with bi-directional communication and electricity flow have enabled both utilities and customers
-                        to monitor, predict, and manage energy usage and environmental sustainability.
+                        Network and Smart Energy Systems: Issues and Challenges is being organised by Department of
+                        Electrical Engineering, National Institute of Technology, Kurukshetra. This conference shall
+                        provide a useful forum to the Academicians, Technologist, Entrepreneurs and Research scholars in
+                        the respective domain for further benefit of the mankind at large. Today, the power network is
+                        very vast, complex, and evolving with increasing penetration of renewable energy sources (RES),
+                        energy storage devices, electric vehicles, and smart technologies. This brings in associated
+                        challenges. The operation of the power system should be secure, interoperable, and cost-effective
+                        while the technology and innovation continue to modernize electric power system with the
+                        integration of RES, smart devices, communication for perfect coordination among devices and
+                        integration of hardware and software to take decisions like human making the electric
+                        infrastructure called a “smart grid”. With advanced sensing technologies and control techniques,
+                        it can capture and analyse data regarding power usage, delivery, and generation in near real-time.
+                        The information technologies with bi-directional communication and electricity flow have enabled
+                        both utilities and customers to monitor, predict, and manage energy usage and environmental
+                        sustainability.
                         <br><br>
                         This conference is envisioned to provide platform to the academia and industry participants to
                         explore into latest emerging technology trends on the thematic areas and update on research
                         directions for collaborative work.
                     </p>
-
-                    <!-- <figure>
-                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
-                    </figure> -->
-
-                </div><!-- /.col-sm-6 -->
-
-                <div class="col-sm-6">
-
+                    <br><br>
                     <h3 class="section-title multiple-title">About NIT Kurukshetra</h3>
-
                     <p class="about-text" style="text-align: justify;">NIT Kurukshetra, formerly known as Regional
                         Engineering College,
                         Kurukshetra was founded in 1963. It was conferred upon the NIT status, with Deemed University on
                         June 26, 2002. The Institute offers several courses, in various disciplines of B.Tech, M.Tech,
-                        MBA and MCA and Ph.D. with an annual intake of about 1500 students. Institute also provides
+                        MBA, MCA and Ph.D with an annual intake of about 1500 students. Institute also provides
                         excellent facilities for advanced research in the emerging areas of Engineering, Science, and
                         Technology. The institute has well qualified and dedicated faculty along with supporting staff,
                         laboratories and other infrastructure. The infrastructure is geared to enable the institute to
                         produce technical personnel of high quality</p>
-
-                    <!-- <ul class="list-arrow-right">
-
-                        <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
-                        <li>Have dedicated 2-to-1 meetings with the experts</li>
-                        <li>Reach more consumers for less by learning new digital media skills</li>
-                        <li>Save money when spending in online advertising</li>
                     
-                    </ul> -->
-
+                    <br><br>
                     <h3 class="section-title multiple-title">About Electrical Engineering Department</h3>
 
                     <p class="about-text" style="text-align: justify;">The Department offers B.Tech, M.Tech and Ph.D.
@@ -164,7 +148,7 @@
                         Systems; Power Electronics and Drives and offers Ph.D. in different areas to keep synergy with
                         the evolving innovations and developments in all disciplines of Electrical Engineering.</p>
 
-                </div><!-- /.col-sm-6 -->
+                </div><!-- /.col-sm-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
@@ -172,27 +156,22 @@
     <section id="facts" class="section bg-image-1 facts text-center">
         <div class="container">
             <div class="row">
-                <!-- <div class="factsContainer"> -->
-                <div class="col-sm-2 factsCard">
-                    <i class="ion-ios-timer"></i>
-                    <h3 id="countdown"></h3>
-                </div>
-                <div class="factsCard col-sm-2">
+                <div class="factsCard col-sm-3">
                     <i class="ion-ios-calendar"></i>
-                    <h3>28-30 DECEMBER<br>2023</h3>
+                    <h3>28<sup>th</sup>- 30<sup>th</sup> Dec 2023</h3>
 
                 </div>
-                <div class="factsCard col-sm-2">
+                <div class="factsCard col-sm-3">
                     <i class="ion-ios-location"></i>
                     <h3>Kurukshetra<br>Haryana, India</h3>
 
                 </div>
-                <div class="factsCard col-sm-2">
+                <div class="factsCard col-sm-3">
                     <i class="ion-pricetags"></i>
                     <h3>5 Track<br>for Papers</h3>
 
                 </div>
-                <div class="factsCard col-sm-2">
+                <div class="factsCard col-sm-3">
                     <i class="ion-speakerphone"></i>
                     <h3>06<br>Speakers</h3>
                 </div>
@@ -576,6 +555,10 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <!--clock things-->
+    <script src="assets/js/clock.js"></script>
+    <!--clock things-->
+
 </body>
 
 </html>

@@ -21,39 +21,6 @@ function handleTopNavAnimation() {
   }
 }
 
-/* countdown timer */
-
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 28, 2023 00:00:00").getTime();
-
-// Update the countdown every 1 second
-var countdownFunction =  setInterval(function() {
-
-    // Get the current date and time
-    var now = new Date().getTime();
-
-    // Calculate the time remaining
-    var timeRemaining = countDownDate - now;
-
-    // Calculate days, hours, minutes, and seconds
-    var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    // Display the countdown
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-    // If the countdown is over, display a message
-    if (timeRemaining < 0) {
-        clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-    }
-}, 1000);
-
-// dark mode
-
-
 /*
  * Registration Form
 */
@@ -100,22 +67,83 @@ $('#registration-form').submit(function (e) {
 
 smoothScroll.init();
 
+// $(window).scroll(function () {
+//     if ($(this).scrollTop() > 100) {
+//         $('.back-to-top').fadeIn('slow');
+//     } else {
+//         $('.back-to-top').fadeOut('slow');
+//     }
+// });
+// $('.back-to-top').click(function () {
+//     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+//     return false;
+// });
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function() {
+  scrollFunction();
+};
+
+// Check scroll position on page load or refresh
+window.onload = function() {
+  scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  let startY = window.pageYOffset;
+  let targetY = 0;
+  let distance = targetY - startY;
+  let duration = 700; //adjust this value to control the scrolling speed
+
+  // Animation function
+  function smoothScroll(currentTime) {
+    // Calculate time fraction
+    let timeFraction = (currentTime - startTime) / duration;
+    if (timeFraction > 1) timeFraction = 1;
+
+    // Apply the smooth scroll to the current position
+    window.scrollTo(0, startY + distance * ease(timeFraction));
+
+    // Continue the animation until it reaches the target position
+    if (timeFraction < 1) {
+      requestAnimationFrame(smoothScroll);
+    }
+  }
+
+  // Easing function (for a smooth animation)
+  function ease(t) {
+    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  }
+
+  // Get the current timestamp
+  let startTime = performance.now();
+
+  // Start the animation
+  requestAnimationFrame(smoothScroll);
 }
+
+// smooth scroll for the marquee
+  // Smooth scroll effect
+const marqueeContainer = document.querySelector('.marquee-container');
+
+marqueeContainer.addEventListener('mouseover', () => {
+  marqueeContainer.style.animation = 'marquee 20s linear infinite';
+});
+
+marqueeContainer.addEventListener('mouseout', () => {
+  marqueeContainer.style.animation = '';
+});
