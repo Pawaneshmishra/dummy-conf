@@ -478,6 +478,14 @@ ul li {
   color: white;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333;  /* old IE */
+  background-color: #333;  /* Modern Browsers */
+}
+
 .ion-person{
   color: black;
 }
@@ -544,6 +552,7 @@ ul li {
   margin: 0;
   font-size: 1.2rem;
 }
+
 
 .social-links {
   width: 90%;
