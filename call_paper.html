@@ -53,13 +53,13 @@
             </div><!-- /.navbar-header -->
 
             <div class="collapse navbar-collapse" id="navbar-items">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navFlex">
 
                     <!-- navigation menu -->
-                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./organizing_committee.html">Organizing Committee</a></li>
                     <li><a href="./speakers.html">Keynote Speakers</a></li>
-                    <li><a href="./call_paper.html">Call For Papers</a></li>
+                    <li class="active"><a href="./call_paper.html">Call For Papers</a></li>
                     <li><a href="./submission.html">Paper Submission</a></li>
                     <li><a href="./places.html">Places to Visit</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -74,7 +74,7 @@
         </div><!-- /.container -->
     </nav>
 
-    
+
     <section id="callforPaper" class="section callforPaper faq">
         <div class="container">
             <div style="padding-top: 100px;" class="row">
@@ -263,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
 
     </section>
@@ -274,44 +274,69 @@
             border-bottom: #000 1px solid;
             padding-bottom: 0%;
         }
-    
+
         .footer-column {
             flex: 1;
+            text-align: left;
+            padding-left: 30px;
         }
-    
+
         .border-right {
             border-right: 1px solid #000;
         }
-    
+
+        @media (max-width: 768px) {
+            .border-right {
+                border-right: 0px;
+                border-bottom: 1px solid #000;
+                margin-bottom: 5px;
+            }
+
+            .footer-column {
+                text-align: left;
+            }
+
+            .footer-collage {
+                align-items: flex-start;
+            }
+
+            #countdown {
+                display: none;
+            }
+        }
+
         /* Set text color to black */
-        h4, h5, .footer-text {
+        h4,
+        h5,
+        .footer-text {
             color: #000;
         }
-        
     </style>
-    
     <div class="footer-container">
         <div class="footer-collage">
             <div class="footer-column border-right">
                 <h4>FPNSES-2023</h4>
-                <hr style="height: 0.5px;">
+                <br>
+                <!-- <hr style="height: 0.5px;"> -->
                 <h5>Department of Electrical Engineering</h5>
                 <h5>National Institute of Technology, Kurukshetra</h5>
             </div>
 
-    
+
             <div class="footer-column border-right">
                 <h4>Contact</h4>
-                <hr style="height: 0.5px;">
+                <!-- <hr style="height: 0.5px;"> -->
+                <br>
                 <ul class="list-unstyled">
                     <li class="footer-text">Tel: +91 0123456789, 0987654321</li>
                     <li class="footer-text">Email: dummy@email.com</li>
                 </ul>
             </div>
-    
+
             <div class="footer-column">
                 <h4>Important Dates</h4>
-                <hr style="height: 0.5px;">
+                <br>
+                <!-- <hr style="height: 0.5px;"> -->
                 <ul class="list-unstyled">
                     <li class="footer-text">Peer submission deadline: Update soon</li>
                     <li class="footer-text">Paper acceptance notification: Update soon</li>
@@ -321,8 +346,8 @@
             </div>
         </div>
     </div>
-    
-        <!-- <div class="footer-developers">
+
+    <!-- <div class="footer-developers">
             <div class="developer">
                 <i class="ion-person"></i>
                 <h4>Amitesh Ranjan</h4>
@@ -363,68 +388,67 @@
                 </div>
             </div>
         </div> -->
-        <div class="footer-waves-body">
-            <br><br>
-            <h6 class="developerName" style="margin: 0px;">Design and Developed by</h6>
-            <div class="footer-developers" style="justify-content: center; gap: 5px;">
-                <div class="developer-card">
-                    <!-- <i class="ion-person"></i> -->
-                    <h4 class="developerName">Amitesh Ranjan</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/amitesh-ranjan-0426251bb/" class="social-icon">
-                            <i class="ion-social-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/amitesh-191885" class="social-icon">
-                            <i class="ion-social-github"></i>
-                        </a>
-
-                    </div>
+    <div class="footer-waves-body">
+        <br><br>
+        <h6 class="developerName" style="margin: 0px;">Design and Developed by</h6>
+        <div class="footer-developers" style="justify-content: center; gap: 5px;">
+            <div class="developer-card">
+                <!-- <i class="ion-person"></i> -->
+                <h4 class="developerName">Amitesh Ranjan</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/amitesh-ranjan-0426251bb/" class="social-icon">
+                        <i class="ion-social-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/amitesh-191885" class="social-icon">
+                        <i class="ion-social-github"></i>
+                    </a>
 
                 </div>
-                <div class="developer-card">
-                    <!-- <i class="ion-person"></i> -->
-                    <h4 class="developerName">Pawanesh Mishra</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/pawanesh-mishra-89106b1a9/" class="social-icon">
-                            <i class="ion-social-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Pawaneshmishra" class="social-icon">
-                            <i class="ion-social-github"></i>
-                        </a>
 
-                    </div>
+            </div>
+            <div class="developer-card">
+                <!-- <i class="ion-person"></i> -->
+                <h4 class="developerName">Pawanesh Mishra</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/pawanesh-mishra-89106b1a9/" class="social-icon">
+                        <i class="ion-social-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Pawaneshmishra" class="social-icon">
+                        <i class="ion-social-github"></i>
+                    </a>
 
                 </div>
-                <div class="developer-card">
-                    <!-- <i class="ion-person"></i> -->
-                    <h4 class="developerName">Enayat Kareem</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/enayat-kareem-2a0152233/" class="social-icon">
-                            <i class="ion-social-linkedin"></i>
-                        </a>
-                        <a href="https://www.github.com/klau-s" class="social-icon">
-                            <i class="ion-social-github"></i>
-                        </a>
 
-                    </div>
+            </div>
+            <div class="developer-card">
+                <!-- <i class="ion-person"></i> -->
+                <h4 class="developerName">Enayat Kareem</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/enayat-kareem-2a0152233/" class="social-icon">
+                        <i class="ion-social-linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com/klau-s" class="social-icon">
+                        <i class="ion-social-github"></i>
+                    </a>
+
                 </div>
             </div>
-            <div>
-                <svg class="footer-waves-content" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none"
-                    shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="footer-wave-parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(10, 38, 71, 0.7)" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(10, 38, 71, 0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(10, 38, 71, 0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(10, 38, 71, 1)" />
-                    </g>
-                </svg>
-            </div>
+        </div>
+        <div>
+            <svg class="footer-waves-content" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none"
+                shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="footer-wave-parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(10, 38, 71, 0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(10, 38, 71, 0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(10, 38, 71, 0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(10, 38, 71, 1)" />
+                </g>
+            </svg>
         </div>
     </div>
 
