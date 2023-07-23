@@ -1205,3 +1205,50 @@ marquee {
   display: inline-block;
   width: 30%; /* Adjust the width of the gap as per your preference */
 }
+
+/* the css for the registration fees table */
+.glassmorphism-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.glassmorphism-card-table {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 90%; /* To center the card and make it responsive */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #0A2647;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #0A2647;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Optional: Add some spacing between rows for better readability */
+tr:not(:first-child) {
+  border-top: 1px solid #0A2647;
+}
