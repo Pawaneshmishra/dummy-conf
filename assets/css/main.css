@@ -46,7 +46,7 @@ p {
 ul li {
   font-weight: 700;
   /* margin-bottom: 10px; */
-  
+
 }
 
 .custom-list-icon,
@@ -1215,7 +1215,7 @@ marquee {
 /* The CSS remains the same as before, with one addition for the gap */
 .gap {
   display: inline-block;
-  width: 30%; /* Adjust the width of the gap as per your preference */
+  width: 20%; /* Adjust the width of the gap as per your preference */
 }
 
 table {
