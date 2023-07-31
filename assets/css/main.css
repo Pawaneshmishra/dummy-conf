@@ -157,11 +157,8 @@ ul li {
 
 .section-title {
   color: #313131;
-  letter-spacing: 1.1px;
-  margin: 0 0 20px;
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: #000000;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .about-text {
@@ -1131,9 +1128,9 @@ option {
     flex-direction: column;
     align-items: center;
   }
-  .flexAd{
+  /* .flexAd{
     flex-wrap: wrap;
-  }
+  } */
   .submissionLi{
     text-align: left;
   }
@@ -1166,7 +1163,7 @@ option {
   font-weight: 400;
 }
 
-.flexLeft{
+/* .flexLeft{
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -1176,7 +1173,7 @@ option {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */
 
 
 .glassmorphism-container {
