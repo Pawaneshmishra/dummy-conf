@@ -138,12 +138,12 @@ function topFunction() {
 
 // smooth scroll for the marquee
   // Smooth scroll effect
-const marqueeContainer = document.querySelector('.marquee-container');
+// const marqueeContainer = document.querySelector('.marquee-container');
 
-marqueeContainer.addEventListener('mouseover', () => {
-  marqueeContainer.style.animation = 'marquee 20s linear infinite';
-});
+// marqueeContainer.addEventListener('mouseover', () => {
+//   marqueeContainer.style.animation = 'marquee 20s linear infinite';
+// });
 
-marqueeContainer.addEventListener('mouseout', () => {
-  marqueeContainer.style.animation = '';
-});
+// marqueeContainer.addEventListener('mouseout', () => {
+//   marqueeContainer.style.animation = '';
+// });
